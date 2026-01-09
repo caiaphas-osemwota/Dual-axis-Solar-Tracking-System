@@ -1,7 +1,7 @@
 #include <ESP32Servo.h>
 
 //constants
-const int SERVO_PIN = 32; // Servo control pin
+const int SERVO_PIN  = 32; // Servo control pin
 const int LDR_TOP    = 36; // LDR1 
 const int LDR_LEFT   = 39; // LDR2
 const int LDR_RIGHT  = 34; // LDR3
