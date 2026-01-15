@@ -87,4 +87,5 @@ Extend the system to full 2-axis directional tracking.
 - Implement full PID control on both axes  
 - Improve mechanical rigidity and damping  
 - Replace breadboard wiring with a custom PCB  
-- Optimize sensor placement 
+- Optimize sensor placement
+- Integrate IMU
