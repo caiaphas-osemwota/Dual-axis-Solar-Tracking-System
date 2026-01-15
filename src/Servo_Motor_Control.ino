@@ -39,7 +39,7 @@ void loop() {
   // Read LDRs
   float leftV  = analogRead(LDR_LEFT)  * VREF / ADC_MAX;
   float rightV = analogRead(LDR_RIGHT) * VREF / ADC_MAX;
-  // Calculate error (positive -> move toward left light)
+  // Calculate error
   float error = (leftV - rightV) - centerBias;
   // Servo control with deadband and scaling
   if (abs(error) <= DEADBAND) {
