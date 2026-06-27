@@ -11,10 +11,10 @@ The final goal is a dual-axis (azimuth + elevation) tracking system similar to s
 ![IMG_7139](https://github.com/user-attachments/assets/5256b0e0-4c12-46d5-b00c-cc738f3974a2)
 
 **Goal:**  
-Confirm LDR behavior and determine light direction using a simple output (LEDs).
+Confirm LDR behavior and determine light direction using LEDs.
 
 **Design:**  
-- Four LDRs in a square (quadrant) layout  
+- Four LDRs in a "X" layout  
 - Each LDR mapped to an LED (up, down, left, right) to display light intensity  
 
 **What worked:**  
