@@ -6,6 +6,36 @@ The final goal is a dual-axis (azimuth + elevation) tracking system similar to s
 
 ---
 
+## Current Firmware
+
+The active ESP32 firmware for the dual-axis prototype is:
+
+[`firmware/DualAxisSolarTracker/DualAxisSolarTracker.ino`](firmware/DualAxisSolarTracker/DualAxisSolarTracker.ino)
+
+It reads four LDRs, filters the readings, calculates horizontal and vertical error, and commands independent azimuth and elevation servos. It requires the `ESP32Servo` library.
+
+The sketches in [`archive/`](archive/) document earlier sensor and one-axis experiments. They are retained for reference and are not the firmware to upload for the dual-axis tracker.
+
+### Project Layout
+
+```text
+firmware/DualAxisSolarTracker/  Active dual-axis ESP32 sketch
+archive/                        Earlier experiments
+Schematics/                     Electrical schematic sources and PDFs
+3D Assemblies/                  Mechanical assembly model
+```
+
+### Uploading the Active Firmware
+
+1. Install the ESP32 board package in Arduino IDE.
+2. Install the `ESP32Servo` library through Library Manager.
+3. Open `firmware/DualAxisSolarTracker/DualAxisSolarTracker.ino`.
+4. Select the correct ESP32 board and serial port, then compile and upload.
+
+> The dual-axis tracker remains a prototype. Verify the servo limits, polarity, wiring, and mechanical clearance before powering the servos.
+
+---
+
 ## Prototype 1: Quadrant Light Sensing with Visual Feedback
 
 ![IMG_7139](https://github.com/user-attachments/assets/5256b0e0-4c12-46d5-b00c-cc738f3974a2)

@@ -1,5 +1,22 @@
 #include <ESP32Servo.h>
 
+/*
+  DualAxisSolarTracker
+
+  Active firmware for the ESP32 dual-axis solar-tracking prototype.
+
+  Hardware:
+  - ESP32
+  - Four LDRs: top, bottom, left, and right
+  - Two servos: azimuth and elevation
+
+  Dependency:
+  - ESP32Servo
+
+  The sketches in archive/ are earlier experiments and are not the active
+  tracker firmware.
+*/
+
 //constants
 const int AZSERVO_PIN  = 32; // Azimuth Servo control pin
 const int ELVSERVO_PIN = 33; // Elevation Servo control pin
